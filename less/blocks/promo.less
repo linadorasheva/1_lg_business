@@ -1,5 +1,5 @@
 .promo {
-
+  margin-bottom: 31px;
 }
 
 .promo__wrapper {
@@ -50,22 +50,39 @@
 }
 
 .promo__link-create {
-  display: block;
   width: 246px;
-  padding-top: 14px;
-  padding-bottom: 18px;
-  background-color: #e88a74;
-  font-family: 'Museo Sans 300 Light', san-serif;
-  font-size: 18px;
-  line-height: 25px;
-  text-align: center;
-  color: #ffffff;
-  border-radius: 1000px;
-  text-decoration: none;
+  margin: 0 auto;
+  margin-bottom: 33px;
 }
 
 .promo__link-smartphone {
+  position: relative;
+  display: block;
+  width: 289px;
+  margin: 0 auto;
+  padding-left: 85px;
+  padding-top: 17px;
+  padding-bottom: 22px;
+  border-radius: 5px;
+  background-color: #ffeee9;
+  font-family: 'Museo Sans 300 Light', san-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 22px;
+  text-align: left;
+  color: #e88a74;
+  box-sizing: border-box;
+  text-decoration: none;
+}
 
+.promo__link-smartphone::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 53px;
+  width: 24px;
+  height: 39px;
+  background-image: url(../img/smartphone-icon.svg);
 }
 
 .promo__video-descr {
@@ -79,15 +96,19 @@
 }
 
 .promo__text {
+  margin: 0;
+  margin-bottom: 33px;
   font-family: 'Museo Sans 300 Light', san-serif;
   font-size: 16px;
   line-height: 25px;
   font-weight: 300;
   color: #4a4a4a;
-
 }
 
 .promo__text-bold {
-  font-family: 'Museo Sans 700 Bold';
-  font-weight: 700;
+  font-family: 'MuseoSansCyrl-700';
+}
+
+@media (min-width: 1600px) {
+
 }
